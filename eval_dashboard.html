@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #000; color: #fff; padding: 20px; }
+        h1 { color: #cc0033; }
+        .cards { display: flex; gap: 15px; margin-bottom: 20px; }
+        .card { background: #1e1e1e; padding: 15px; border-radius: 8px; border: 1px solid #333; text-decoration: none; color: white; transition: 0.2s; }
+        .card:hover { background: #333; }
+        table { width: 100%; border-collapse: collapse; background: #121212; table-layout: fixed; }
+        th { background: #2a2a2a; color: #ccc; padding: 12px; text-align: left; border-bottom: 2px solid #cc0033; font-size: 1em; }
+        td { padding: 15px; border-bottom: 1px solid #333; vertical-align: top; font-size: 1em; }
+
+        /* Updated Widths: Subscores down to 10%, Output up to 45% */
+        .subscores-col { width: 10%; font-size: 0.9em; }
+        .output-col { width: 45%; }
+        .reasoning-col { width: 20%; }
+
+        .scrollable-output { 
+            height: 300px; 
+            overflow-y: auto; 
+            white-space: pre-wrap; 
+            font-family: monospace; 
+            background: #0a0a0a; 
+            padding: 10px; 
+            border: 1px solid #444; 
+        }
+        tr:hover { background: #1e1e1e; }
+    </style>
+</head>
+<body>
+    <h1>RU Scarlet Scheduler AI — Dashboard</h1>
+    <div class="cards">
+        <div class="card"><h2>Avg Score</h2><p>8.4/10</p></div>
+        <div class="card"><h2>Pass Rate</h2><p>100.0%</p></div>
+        <div class="card"><h2>Total</h2><p>5</p></div>
+        <a href="#case-RU001" class="card"><h2>Best Case 👑</h2><p>RU001 (9/10)</p></a>
+        <a href="#case-RU004" class="card"><h2>Worst Case 😡</h2><p>RU004 (7/10)</p></a>
+    </div>
+    <table>
+        <tr>
+            <th style="width: 5%;">ID</th>
+            <th style="width: 18%;">User Input</th>
+            <th class="subscores-col">Subscores</th>
+            <th class="output-col">Output</th>
+            <th style="width: 5%;">Total</th>
+            <th class="reasoning-col">Reasoning</th>
+        </tr>
+        
+    <tr id="case-RU001">
+        <td>RU001</td>
+        <td style="font-size: 1em; line-height: 1.4;">
+            <strong>Major:</strong> 198, 640<br>
+            <strong>Elective Core:</strong> <br>
+            <strong>Credits Wanted:</strong> 15<br>
+            <strong>Credits Completed:</strong> 0<br>
+            <strong>Course History:</strong> 
+        </td>
+        <td style="font-size: 1em; line-height: 1.6; white-space: nowrap;">
+            Accuracy: 3/3<br>
+            Constraints: 3/3<br>
+            Completeness: 2/2<br>
+            Professionalism: 1/2
+        </td>
+        <td>
+            <div class="scrollable-output">- 01:198:111 INTRO COMPUTER SCI | 4 Credits | Prerequisites met: Yes
+- 01:640:151 CALC I MATH/PHYS | 4 Credits | Prerequisites met: Yes
+- 01:198:142 DATA 101 | 4 Credits | Prerequisites met: Yes
+- 01:198:104 GREAT IDEAS IN CS | 1 Credit | Prerequisites met: Yes
+
+This schedule covers foundational CS and Mathematics major requirements, reaching 13 credits as no eligible course could fill the remaining 2-credit gap without unmet prerequisites. The workload is well-suited for a Freshman Fall student beginning both the CS and Math tracks.</div>
+        </td>
+        <td style="text-align: center; vertical-align: top;">
+            <div style="
+                background-color: #1e4620; 
+                color: #fff; 
+                width: 35px; 
+                height: 35px; 
+                line-height: 35px; 
+                border-radius: 6px; 
+                display: inline-block; 
+                font-weight: bold;
+                text-align: center;
+            ">
+                9
+            </div>
+        </td>
+        <td class="reasoning-col" style="font-size: 1em;">All course codes follow proper XX:XXX:XXX format and prerequisites are met for a freshman with no history. The summary is slightly over 2 sentences but remains actionable; minor tone deduction for borderline length.</td>
+    </tr>
+    
+    <tr id="case-RU002">
+        <td>RU002</td>
+        <td style="font-size: 1em; line-height: 1.4;">
+            <strong>Major:</strong> 920, 700<br>
+            <strong>Elective Core:</strong> CCD<br>
+            <strong>Credits Wanted:</strong> 16<br>
+            <strong>Credits Completed:</strong> 30<br>
+            <strong>Course History:</strong> 01:198:111, 01:198:112, 01:920:201, 01:640:150
+        </td>
+        <td style="font-size: 1em; line-height: 1.6; white-space: nowrap;">
+            Accuracy: 3/3<br>
+            Constraints: 2/3<br>
+            Completeness: 2/2<br>
+            Professionalism: 1/2
+        </td>
+        <td>
+            <div class="scrollable-output">- 01:920:311 SOC RESEARCH | 4 Credits | Prerequisites met: Yes
+- 01:920:312 INTRO STAT IN SOC | 4 Credits | Prerequisites met: Yes
+- 01:920:222 CRIMINOLOGY | 3 Credits | Prerequisites met: Yes
+- 07:700:292 MUSICS OF THE WORLD | 3 Credits | Prerequisites met: Yes (CCD)
+- 07:700:101 INTRO TO MUSIC I | 3 Credits | Prerequisites met: Yes
+
+This schedule meets the 16-credit goal exactly, covering core Sociology methodology requirements, a Music major elective, and the requested CCD Core Elective. The workload is well-suited for a Sophomore Spring student progressing through both majors.</div>
+        </td>
+        <td style="text-align: center; vertical-align: top;">
+            <div style="
+                background-color: #8BA543; 
+                color: #fff; 
+                width: 35px; 
+                height: 35px; 
+                line-height: 35px; 
+                border-radius: 6px; 
+                display: inline-block; 
+                font-weight: bold;
+                text-align: center;
+            ">
+                8
+            </div>
+        </td>
+        <td class="reasoning-col" style="font-size: 1em;">All course codes follow the correct XX:XXX:XXX format and prerequisites appear respected. However, the schedule totals 17 credits, not 16 as requested, and the summary incorrectly claims it 'meets the 16-credit goal exactly,' which is unprofessional and misleading.</td>
+    </tr>
+    
+    <tr id="case-RU003">
+        <td>RU003</td>
+        <td style="font-size: 1em; line-height: 1.4;">
+            <strong>Major:</strong> 137, 198<br>
+            <strong>Elective Core:</strong> HST<br>
+            <strong>Credits Wanted:</strong> 17<br>
+            <strong>Credits Completed:</strong> 62<br>
+            <strong>Course History:</strong> 01:137:101, 01:137:102, 01:198:111, 01:198:251, 01:198:252, 01:640:150
+        </td>
+        <td style="font-size: 1em; line-height: 1.6; white-space: nowrap;">
+            Accuracy: 3/3<br>
+            Constraints: 3/3<br>
+            Completeness: 2/2<br>
+            Professionalism: 1/2
+        </td>
+        <td>
+            <div class="scrollable-output">- 01:198:112 DATA STRUCTURES | 4 Credits | Prerequisites met: Yes
+- 01:198:205 INTR DISCRET STRCT I | 4 Credits | Prerequisites met: Yes
+- 01:198:210 DATA MGMT FOR DATASC | 4 Credits | Prerequisites met: Yes
+- 01:016:222 MODERN AFRICA | 3 Credits | Prerequisites met: Yes (HST)
+- 01:198:104 GREAT IDEAS IN CS | 1 Credit | Prerequisites met: Yes
+
+This schedule covers four core CS requirements and satisfies the HST Core Elective, aligning well with junior-level progression. It lands at 16 credits as no eligible course could fill the remaining 1-credit gap without unmet prerequisites.</div>
+        </td>
+        <td style="text-align: center; vertical-align: top;">
+            <div style="
+                background-color: #1e4620; 
+                color: #fff; 
+                width: 35px; 
+                height: 35px; 
+                line-height: 35px; 
+                border-radius: 6px; 
+                display: inline-block; 
+                font-weight: bold;
+                text-align: center;
+            ">
+                9
+            </div>
+        </td>
+        <td class="reasoning-col" style="font-size: 1em;">All course codes follow valid XX:XXX:XXX format, prerequisites appear respected, and the HST core elective is included. The summary slightly exceeds 50 words and misidentifies 01:016:222 as HST when the department code is 016, not a history (137) course, which may cause minor confusion.</td>
+    </tr>
+    
+    <tr id="case-RU004">
+        <td>RU004</td>
+        <td style="font-size: 1em; line-height: 1.4;">
+            <strong>Major:</strong> 640, 260<br>
+            <strong>Elective Core:</strong> WC<br>
+            <strong>Credits Wanted:</strong> 13<br>
+            <strong>Credits Completed:</strong> 96<br>
+            <strong>Course History:</strong> 01:640:150, 01:640:251, 01:640:252, 01:198:111, 01:198:251, 01:260:201, 01:260:202
+        </td>
+        <td style="font-size: 1em; line-height: 1.6; white-space: nowrap;">
+            Accuracy: 3/3<br>
+            Constraints: 2/3<br>
+            Completeness: 2/2<br>
+            Professionalism: 0/2
+        </td>
+        <td>
+            <div class="scrollable-output">- 01:640:477 MATH THEORY PROB | 3 Credits | Prerequisites met: Yes
+- 01:640:354 LINEAR OPTIMIZATION | 3 Credits | Prerequisites met: Yes
+- 01:640:300 INTRO MATH REASONING | 3 Credits | Prerequisites met: Yes
+- 01:355:101 COLLEGE WRITING | 3 Credits | Prerequisites met: Partial (WC — Basic Composition prerequisite assumed met as a Senior)
+
+This schedule reaches the 12-credit target, falling 1 credit short of the 13-credit goal as no eligible single-credit course was available to fill the gap. It covers meaningful upper-level Mathematics major requirements alongside the WC Core Elective, representing a manageable but substantive workload for a Senior Spring semester.</div>
+        </td>
+        <td style="text-align: center; vertical-align: top;">
+            <div style="
+                background-color: #665400; 
+                color: #fff; 
+                width: 35px; 
+                height: 35px; 
+                line-height: 35px; 
+                border-radius: 6px; 
+                display: inline-block; 
+                font-weight: bold;
+                text-align: center;
+            ">
+                7
+            </div>
+        </td>
+        <td class="reasoning-col" style="font-size: 1em;">All course codes follow correct Rutgers format and prerequisites appear respected. However, the summary exceeds 2 sentences and reads more like inline reasoning than a concise student-facing note, which hurts professionalism.</td>
+    </tr>
+    
+    <tr id="case-RU005">
+        <td>RU005</td>
+        <td style="font-size: 1em; line-height: 1.4;">
+            <strong>Major:</strong> 960, 198<br>
+            <strong>Elective Core:</strong> NS<br>
+            <strong>Credits Wanted:</strong> 14<br>
+            <strong>Credits Completed:</strong> 14<br>
+            <strong>Course History:</strong> 01:198:111, 01:960:151
+        </td>
+        <td style="font-size: 1em; line-height: 1.6; white-space: nowrap;">
+            Accuracy: 3/3<br>
+            Constraints: 3/3<br>
+            Completeness: 2/2<br>
+            Professionalism: 1/2
+        </td>
+        <td>
+            <div class="scrollable-output">- 01:198:112 DATA STRUCTURES | 4 Credits | Prerequisites met: Yes
+- 01:198:205 INTR DISCRET STRCT I | 4 Credits | Prerequisites met: Yes
+- 01:119:103 PRINCIPLES OF BIOL | 3 Credits | Prerequisites met: Yes (NS)
+- 01:198:104 GREAT IDEAS IN CS | 1 Credit | Prerequisites met: Yes
+
+This schedule covers core CS and Statistics major requirements while fulfilling the NS Core Elective, landing at 12 credits as no additional eligible courses could fill the remaining gap without unmet prerequisites. The workload is appropriate for a Freshman Spring student, though the 2-credit shortfall from the 14-credit goal is worth discussing with your academic advisor.</div>
+        </td>
+        <td style="text-align: center; vertical-align: top;">
+            <div style="
+                background-color: #1e4620; 
+                color: #fff; 
+                width: 35px; 
+                height: 35px; 
+                line-height: 35px; 
+                border-radius: 6px; 
+                display: inline-block; 
+                font-weight: bold;
+                text-align: center;
+            ">
+                9
+            </div>
+        </td>
+        <td class="reasoning-col" style="font-size: 1em;">All course codes follow correct format, prerequisites appear respected, and the 2-credit shortfall was appropriately acknowledged. Minor deduction for the summary slightly exceeding the concise 2-sentence guideline and referencing 'Statistics major' which wasn't mentioned by the student.</td>
+    </tr>
+    
+    </table>
+</body>
+</html>

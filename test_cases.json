@@ -1,0 +1,92 @@
+[
+  {
+    "id": "RU001",
+    "semester": "Freshman Fall",
+    "subjects": "198, 640",
+    "core_elective": "",
+    "credits_wanted": 15,
+    "credits_completed": 0,
+    "academic_history": ""
+  },
+  {
+    "id": "RU002",
+    "semester": "Sophomore Spring",
+    "subjects": "920, 700",
+    "core_elective": "CCD",
+    "credits_wanted": 16,
+    "credits_completed": 30,
+    "academic_history": "01:198:111, 01:198:112, 01:920:201, 01:640:150"
+  },
+  {
+    "id": "RU003",
+    "semester": "Junior Fall",
+    "subjects": "137, 198",
+    "core_elective": "HST",
+    "credits_wanted": 17,
+    "credits_completed": 62,
+    "academic_history": "01:137:101, 01:137:102, 01:198:111, 01:198:251, 01:198:252, 01:640:150"
+  },
+  {
+    "id": "RU004",
+    "semester": "Senior Spring",
+    "subjects": "640, 260",
+    "core_elective": "WC",
+    "credits_wanted": 13,
+    "credits_completed": 96,
+    "academic_history": "01:640:150, 01:640:251, 01:640:252, 01:198:111, 01:198:251, 01:260:201, 01:260:202"
+  },
+  {
+    "id": "RU005",
+    "semester": "Freshman Spring",
+    "subjects": "960, 198",
+    "core_elective": "NS",
+    "credits_wanted": 14,
+    "credits_completed": 14,
+    "academic_history": "01:198:111, 01:960:151"
+  },
+  {
+    "id": "RU006",
+    "semester": "Junior Spring",
+    "subjects": "700, 650, 920",
+    "core_elective": "SCL",
+    "credits_wanted": 18,
+    "credits_completed": 60,
+    "academic_history": "01:700:201, 01:700:202, 01:920:201, 01:650:150, 01:650:151, 01:198:111"
+  },
+  {
+    "id": "RU007",
+    "semester": "Sophomore Fall",
+    "subjects": "440, 198",
+    "core_elective": "AH",
+    "credits_wanted": 12,
+    "credits_completed": 28,
+    "academic_history": "01:198:111, 01:440:101, 01:640:150"
+  },
+  {
+    "id": "RU008",
+    "semester": "Senior Fall",
+    "subjects": "260, 920, 640",
+    "core_elective": "CCO",
+    "credits_wanted": 11,
+    "credits_completed": 105,
+    "academic_history": "01:260:201, 01:260:251, 01:920:201, 01:920:301, 01:640:150, 01:640:251, 01:198:111, 01:198:251"
+  },
+  {
+    "id": "RU009",
+    "semester": "Freshman Fall",
+    "subjects": "650, 700",
+    "core_elective": "",
+    "credits_wanted": 19,
+    "credits_completed": 0,
+    "academic_history": ""
+  },
+  {
+    "id": "RU010",
+    "semester": "Junior Fall",
+    "subjects": "440, 960, 198",
+    "core_elective": "HST",
+    "credits_wanted": 16,
+    "credits_completed": 58,
+    "academic_history": "01:440:101, 01:440:201, 01:960:151, 01:960:251, 01:198:111, 01:198:112"
+  }
+]

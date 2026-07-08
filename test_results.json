@@ -1,0 +1,67 @@
+[
+  {
+    "id": "RU001",
+    "input": {
+      "id": "RU001",
+      "semester": "Freshman Fall",
+      "subjects": "198, 640",
+      "core_elective": "",
+      "credits_wanted": 15,
+      "credits_completed": 0,
+      "academic_history": ""
+    },
+    "output": "- 01:198:111 INTRO COMPUTER SCI | 4 Credits | Prerequisites met: Yes\n- 01:640:151 CALC I MATH/PHYS | 4 Credits | Prerequisites met: Yes\n- 01:198:142 DATA 101 | 4 Credits | Prerequisites met: Yes\n- 01:198:104 GREAT IDEAS IN CS | 1 Credit | Prerequisites met: Yes\n\nThis schedule covers foundational CS and Mathematics major requirements, reaching 13 credits as no eligible course could fill the remaining 2-credit gap without unmet prerequisites. The workload is well-suited for a Freshman Fall student beginning both the CS and Math tracks."
+  },
+  {
+    "id": "RU002",
+    "input": {
+      "id": "RU002",
+      "semester": "Sophomore Spring",
+      "subjects": "920, 700",
+      "core_elective": "CCD",
+      "credits_wanted": 16,
+      "credits_completed": 30,
+      "academic_history": "01:198:111, 01:198:112, 01:920:201, 01:640:150"
+    },
+    "output": "- 01:920:311 SOC RESEARCH | 4 Credits | Prerequisites met: Yes\n- 01:920:312 INTRO STAT IN SOC | 4 Credits | Prerequisites met: Yes\n- 01:920:222 CRIMINOLOGY | 3 Credits | Prerequisites met: Yes\n- 07:700:292 MUSICS OF THE WORLD | 3 Credits | Prerequisites met: Yes (CCD)\n- 07:700:101 INTRO TO MUSIC I | 3 Credits | Prerequisites met: Yes\n\nThis schedule meets the 16-credit goal exactly, covering core Sociology methodology requirements, a Music major elective, and the requested CCD Core Elective. The workload is well-suited for a Sophomore Spring student progressing through both majors."
+  },
+  {
+    "id": "RU003",
+    "input": {
+      "id": "RU003",
+      "semester": "Junior Fall",
+      "subjects": "137, 198",
+      "core_elective": "HST",
+      "credits_wanted": 17,
+      "credits_completed": 62,
+      "academic_history": "01:137:101, 01:137:102, 01:198:111, 01:198:251, 01:198:252, 01:640:150"
+    },
+    "output": "- 01:198:112 DATA STRUCTURES | 4 Credits | Prerequisites met: Yes\n- 01:198:205 INTR DISCRET STRCT I | 4 Credits | Prerequisites met: Yes\n- 01:198:210 DATA MGMT FOR DATASC | 4 Credits | Prerequisites met: Yes\n- 01:016:222 MODERN AFRICA | 3 Credits | Prerequisites met: Yes (HST)\n- 01:198:104 GREAT IDEAS IN CS | 1 Credit | Prerequisites met: Yes\n\nThis schedule covers four core CS requirements and satisfies the HST Core Elective, aligning well with junior-level progression. It lands at 16 credits as no eligible course could fill the remaining 1-credit gap without unmet prerequisites."
+  },
+  {
+    "id": "RU004",
+    "input": {
+      "id": "RU004",
+      "semester": "Senior Spring",
+      "subjects": "640, 260",
+      "core_elective": "WC",
+      "credits_wanted": 13,
+      "credits_completed": 96,
+      "academic_history": "01:640:150, 01:640:251, 01:640:252, 01:198:111, 01:198:251, 01:260:201, 01:260:202"
+    },
+    "output": "- 01:640:477 MATH THEORY PROB | 3 Credits | Prerequisites met: Yes\n- 01:640:354 LINEAR OPTIMIZATION | 3 Credits | Prerequisites met: Yes\n- 01:640:300 INTRO MATH REASONING | 3 Credits | Prerequisites met: Yes\n- 01:355:101 COLLEGE WRITING | 3 Credits | Prerequisites met: Partial (WC \u2014 Basic Composition prerequisite assumed met as a Senior)\n\nThis schedule reaches the 12-credit target, falling 1 credit short of the 13-credit goal as no eligible single-credit course was available to fill the gap. It covers meaningful upper-level Mathematics major requirements alongside the WC Core Elective, representing a manageable but substantive workload for a Senior Spring semester."
+  },
+  {
+    "id": "RU005",
+    "input": {
+      "id": "RU005",
+      "semester": "Freshman Spring",
+      "subjects": "960, 198",
+      "core_elective": "NS",
+      "credits_wanted": 14,
+      "credits_completed": 14,
+      "academic_history": "01:198:111, 01:960:151"
+    },
+    "output": "- 01:198:112 DATA STRUCTURES | 4 Credits | Prerequisites met: Yes\n- 01:198:205 INTR DISCRET STRCT I | 4 Credits | Prerequisites met: Yes\n- 01:119:103 PRINCIPLES OF BIOL | 3 Credits | Prerequisites met: Yes (NS)\n- 01:198:104 GREAT IDEAS IN CS | 1 Credit | Prerequisites met: Yes\n\nThis schedule covers core CS and Statistics major requirements while fulfilling the NS Core Elective, landing at 12 credits as no additional eligible courses could fill the remaining gap without unmet prerequisites. The workload is appropriate for a Freshman Spring student, though the 2-credit shortfall from the 14-credit goal is worth discussing with your academic advisor."
+  }
+]

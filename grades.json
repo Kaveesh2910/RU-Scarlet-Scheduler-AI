@@ -1,0 +1,57 @@
+[
+  {
+    "total_score": 9,
+    "breakdown": {
+      "Accuracy": 3,
+      "Constraints": 3,
+      "Completeness": 2,
+      "Professionalism": 1
+    },
+    "summary": "All course codes follow proper XX:XXX:XXX format and prerequisites are met for a freshman with no history. The summary is slightly over 2 sentences but remains actionable; minor tone deduction for borderline length.",
+    "id": "RU001"
+  },
+  {
+    "total_score": 8,
+    "breakdown": {
+      "Accuracy": 3,
+      "Constraints": 2,
+      "Completeness": 2,
+      "Professionalism": 1
+    },
+    "summary": "All course codes follow the correct XX:XXX:XXX format and prerequisites appear respected. However, the schedule totals 17 credits, not 16 as requested, and the summary incorrectly claims it 'meets the 16-credit goal exactly,' which is unprofessional and misleading.",
+    "id": "RU002"
+  },
+  {
+    "total_score": 9,
+    "breakdown": {
+      "Accuracy": 3,
+      "Constraints": 3,
+      "Completeness": 2,
+      "Professionalism": 1
+    },
+    "summary": "All course codes follow valid XX:XXX:XXX format, prerequisites appear respected, and the HST core elective is included. The summary slightly exceeds 50 words and misidentifies 01:016:222 as HST when the department code is 016, not a history (137) course, which may cause minor confusion.",
+    "id": "RU003"
+  },
+  {
+    "total_score": 7,
+    "breakdown": {
+      "Accuracy": 3,
+      "Constraints": 2,
+      "Completeness": 2,
+      "Professionalism": 0
+    },
+    "summary": "All course codes follow correct Rutgers format and prerequisites appear respected. However, the summary exceeds 2 sentences and reads more like inline reasoning than a concise student-facing note, which hurts professionalism.",
+    "id": "RU004"
+  },
+  {
+    "total_score": 9,
+    "breakdown": {
+      "Accuracy": 3,
+      "Constraints": 3,
+      "Completeness": 2,
+      "Professionalism": 1
+    },
+    "summary": "All course codes follow correct format, prerequisites appear respected, and the 2-credit shortfall was appropriately acknowledged. Minor deduction for the summary slightly exceeding the concise 2-sentence guideline and referencing 'Statistics major' which wasn't mentioned by the student.",
+    "id": "RU005"
+  }
+]
