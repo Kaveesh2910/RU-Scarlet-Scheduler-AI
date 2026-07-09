@@ -35,7 +35,7 @@ async def fetch_and_filter_rutgers_courses(subjects_string: str, core_string: st
     except Exception as e:
         return f"Error fetching API: {e}"
 
-    # Map user-friendly inputs to official API codes
+    # All Elective Core Codes
     code_map = {
         "CC-O": "CCO", "CC-D": "CCD", "NS": "NS", "SCL": "SCL", 
         "HST": "HST", "AHo": "AHo", "AHp": "AHp", "AHq": "AHq", 
@@ -45,7 +45,6 @@ async def fetch_and_filter_rutgers_courses(subjects_string: str, core_string: st
 
     target_subjects = [s.strip() for s in subjects_string.split(",")] if subjects_string else []
     
-    # Normalize the core input using the map, default to uppercase input if not mapped
     user_input = core_string.strip()
     target_core = code_map.get(user_input, user_input.upper()) 
     
@@ -69,7 +68,7 @@ async def fetch_and_filter_rutgers_courses(subjects_string: str, core_string: st
             core_codes = [c.get("code") for c in course.get("coreCodes", [])]
             if target_core in core_codes:
                 has_core = True
-                
+                        
         if is_major_minor:
             filtered_courses.append({
                 "code": course_str,
@@ -93,12 +92,15 @@ async def fetch_and_filter_rutgers_courses(subjects_string: str, core_string: st
 
 # ─── AI SETUP ─────────────────────────────────────────────
 
+# Add user message
 def add_user_message(messages, text):
     messages.append({"role": "user", "content": text})
 
+# Add assistant message
 def add_assistant_message(messages, text):
     messages.append({"role": "assistant", "content": text})
 
+# Includes AI model and all parameters
 def chat(messages):
     system = """
     You are RU Scarlet Scheduler AI, a course scheduling assistant for Rutgers University New Brunswick students.
@@ -185,6 +187,7 @@ def chat(messages):
     )
     return message.content[0].text
 
+# Extra insurance incase generated output is longer than discord message limit
 async def send_long_discord_message(interaction: discord.Interaction, header: str, content: str):
     full_message = f"{header}\n\n{content}"
     max_length = 2000
