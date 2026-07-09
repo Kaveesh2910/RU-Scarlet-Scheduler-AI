@@ -31,7 +31,7 @@ All you need is a Discord account and a Discord server. No coding knowledge requ
 
 ## Example Output
 
-![Example Output](screenshots/example_output.png)
+![Example Output](screenshots/Ideal_Output.png)
 
 ---
 
@@ -64,6 +64,10 @@ A full **eval pipeline** was built to measure and improve the AI's performance:
 
 ### 4. Iterative Improvement
 Based on eval results, the system prompt was refined multiple times and **multi-shot examples** were added to guide the AI toward ideal responses. The final average score across 10 test cases was **8.4/10**.
+
+## Evaluation Dashboard
+
+![Evaluation Pipeline](screenshots/HTML_Showcase.png)
 
 ---
 
