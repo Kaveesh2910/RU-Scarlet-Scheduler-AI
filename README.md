@@ -99,7 +99,6 @@ If this project gains traction among Rutgers students, the following features ar
 ## Contact
 
 **Kaveesh Kapoor**
-GitHub: [Kaveesh2910](https://github.com/Kaveesh2910)
 Email: [kaveeshdkap@gmail.com]
 
-*For inquiries about this project, feel free to reach out via GitHub.*
+*For inquiries about this project, feel free to reach out via email.*
