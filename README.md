@@ -18,7 +18,8 @@ All you need is a Discord account and a Discord server. No coding knowledge requ
 
 1. Add the bot to your Discord server using the invite link *(coming soon)*
 2. Type `/plansemester` or `!planSemester` in any channel
-3. Select your current semester from the dropdown (Freshman Fall, Sophomore Spring, Senior Fall, etc.)
+3. Select your term: Choose your target semester from the dropdown menu.
+Note: The Summer/Winter session planning feature is currently in Beta. The bot may occasionally suggest courses that are not offered during these condensed terms—please verify all recommendations through the official Rutgers portal.
 4. A form will appear — fill in your:
    - Major(s) and/or Minor(s) (using Rutgers subject codes, e.g. 198 for Computer Science)
    - Core elective requirement needed (e.g. CCD, HST, NS — leave blank if none)
@@ -88,9 +89,11 @@ Responses were evaluated on four criteria:
 
 If this project gains traction among Rutgers students, the following features are planned:
 
-- **Premium tier** — enhanced AI model with persistent memory and personalized recommendations over time
-- **Export your input** — automatically save your course history as a file so you can reuse it next semester without retyping everything
-- **Full degree planner** — `!planDegree` command that maps out all 8 semesters from start to graduation
+- **Production Deployment** — Moving from local development to cloud-based hosting (e.g., Render/Railway) for 24/7 availability.
+- **Beta Stabilization** — Refining the AI logic for Summer and Winter course planning to ensure high accuracy for condensed terms.
+- **Premium Tier** — Enhanced AI model with persistent memory and personalized recommendations over time.
+- **Export your input** — Automatically save your course history as a file so you can reuse it next semester without retyping everything.
+- **Full degree planner** — A `!planDegree` command that maps out all 8 semesters from start to graduation.
 
 ---
 
